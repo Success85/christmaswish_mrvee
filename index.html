@@ -24,8 +24,8 @@
             <img src="./images/images_13.png" alt="" width="350" class="flag__left">
             <img src="./images/images_13.png" alt="" width="350" class="flag__right">
         </div>
-        <audio autoplay loop >
-            <source src="./Bruno Mars - Count on Me (Lyrics).mp3" type="audio/mpeg">
+        <audio id="bg" autoplay loop controls >
+            <source src="/Bruno Mars - Count on Me (Lyrics).mp3" type="audio/mpeg">
         </audio>
         <div class="content">
             <div class="left">
@@ -257,6 +257,11 @@
     close.addEventListener('click', function () {
         boxmail.classList.remove('active')
     })
+
+
+  window.addEventListener("mousemove", () => {
+    document.getElementById("bg").play();
+  }, { once: true });
 </script>
 
 </html>

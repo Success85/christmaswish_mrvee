@@ -42,6 +42,11 @@ body {
     transform: translateY(-200px);
     animation: translateYFlag 1.5s 2s forwards;
 }
+#bg{
+    position: absolute;
+    bottom: 0;
+    right: 50;
+}
 @keyframes translateYFlag{
     to{
         transform: translateY(-10px);
